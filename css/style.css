@@ -1,0 +1,56 @@
+@charset "utf-8";
+body{
+  margin: 0;
+}
+.header{
+  width: 256px;
+  height: 100vh;
+  color: white;
+  background-color: #000;
+  position: fixed;
+}
+.container{
+  display: flexbox;
+  flex-direction: column;
+}
+.logo{
+  display: block;
+  width: 256px;
+  height: 190px;
+  background-color: #222;
+}
+
+.logo .text{
+  padding: 30px 45px;
+}
+.toyota-logo{
+  width: 130px;
+}
+.text img{
+  margin: -15px 0;
+}
+.text p{
+  margin: -15px 0;
+}
+.header-nav{
+  margin-top: -10px;
+}
+.nav{
+  background-color: violet;
+  display: block;
+}
+.nav ul{
+  margin: ;
+
+}
+/* 以下dropdownのcss */
+.dropbtn{
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  margin: 15px auto;
+}
+.dropdown-info{
+  margin-top: 15px;
+}
+/* 以上dropdownのcss */

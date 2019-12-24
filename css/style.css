@@ -1,6 +1,7 @@
 @charset "utf-8";
 body{
   margin: 0;
+  background-color: #000;
 }
 .header{
   width: 256px;
@@ -13,11 +14,15 @@ body{
   display: flexbox;
   flex-direction: column;
 }
+.nav{
+  display: block;
+}
 .logo{
   display: block;
   width: 256px;
   height: 190px;
   background-color: #222;
+  margin-bottom: 5px;
 }
 
 .logo .text{
@@ -33,24 +38,116 @@ body{
   margin: -15px 0;
 }
 .header-nav{
-  margin-top: -10px;
-}
-.nav{
-  background-color: violet;
   display: block;
+  background-color: #222;
+  padding-top: 20px;
+  height: 80vh;
 }
-.nav ul{
-  margin: ;
 
-}
+
 /* 以下dropdownのcss */
-.dropbtn{
-  display: block;
-  padding: 15px;
-  font-size: 16px;
-  margin: 15px auto;
-}
 .dropdown-info{
-  margin-top: 15px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  position: relative;
 }
+.dropbtn{
+  width: 90%;
+  color: #000;
+  letter-spacing: .1em;
+  font-size: 16px;
+  background-size: 20px;
+  background-color: #dd001f;
+  border-radius: 3px;
+  transition: color .15s;
+  padding: 18px 0 16px 22px;
+}
+.dropbtn span{
+  transform: rotate(90deg);
+}
+
+.dropdown-list{
+  display: none;
+  width: 100%;
+  padding: 6px 0 12px;
+  background: #dd001f;
+  border-radius: 0 0 3px 3px;
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.dropdown-list li{
+  padding-bottom: 10px;
+}
+.dropdown-list li a{
+  color: #000;
+  text-decoration: none;
+  padding-left: 20px;
+  display: block;
+}
+.dropdown-list li a:hover{
+  color: #ddd;
+}
+.dropdown-info:hover .dropdown-list{
+  display: block;
+}
+
 /* 以上dropdownのcss */
+
+/* 以下info-linkのcss */
+
+.info-link ul{
+  list-style: none;
+  padding-left: 0;
+}
+.info-link li{
+  display: block;
+  padding:10px 0 10px 40px;
+}
+.info-link li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.info-link li:hover{
+  background-color: #555555;
+}
+
+/* 以上info-linkのcss */
+/* 以下header-endのcss */
+
+.header-end{
+  display: block;
+  background-color: #000;
+}
+.text-area{
+  padding: 15px 0 15px 15px;
+  display: flex;
+  flex-direction: row;
+}
+.feature-logo{
+  color: #dd001f;
+  font-size: 14px;
+  letter-spacing: .1rem;
+}
+.feature-text{
+  padding-top: 10px;
+  font-size: 14px;
+}
+.right-icon{
+  color: #dd001f;
+  font-size: 22px;
+  margin: auto 0 auto 20px;
+}
+/* 以上header-endのcss */
+
+/* 以下contentのcss */
+.contents-area{
+  margin-left: 256px;
+  padding: 10px;
+}
+
+
+/* 以上contentのcss */

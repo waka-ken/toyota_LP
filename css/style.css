@@ -9,6 +9,7 @@ body{
   color: white;
   background-color: #000;
   position: fixed;
+  z-index: 1;
 }
 .container{
   display: flexbox;
@@ -122,7 +123,7 @@ body{
   display: block;
   background-color: #000;
 }
-.text-area{
+.header-text-area{
   padding: 15px 0 15px 15px;
   display: flex;
   flex-direction: row;
@@ -136,18 +137,242 @@ body{
   padding-top: 10px;
   font-size: 14px;
 }
-.right-icon{
+.feature-icon{
   color: #dd001f;
   font-size: 22px;
   margin: auto 0 auto 20px;
 }
 /* 以上header-endのcss */
 
-/* 以下contentのcss */
+/* 以下記事１のcss */
 .contents-area{
   margin-left: 256px;
   padding: 10px;
 }
+.article1{
+  display: block;
+  width: 100%;
+  height: 334px;
+  background-color: #dd001f;
+  margin-bottom: 10px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
 
+.article1-left{
+  display: block;
+  width: 50%;
+  position: relative;
+  padding: 28px 0 28px 30px;
+}
+.article-title{
+  display: block;
+  border-bottom: solid 4px #000;
+  width: 190px;
+  margin-bottom: 40px;
+}
+.bigtext{
+  font-size: 2.2rem;
+}
+.smalltext{
+  font-size: 1rem;
+}
+.article-text{
+  font-size: 2.2rem;
+}
+.right-icon{
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  color: #000;
+  font-size: 2.2rem;
+}
+.article1-right{
+  display: block;
+  width: 50%;
+  overflow: hidden;
+}
+.article1-right img{
+  display: block;
+  height: 334px;
+  width: 120%;
+  object-fit: cover;
+}
+.article1:hover .right-icon{
 
-/* 以上contentのcss */
+}
+.article1:hover .article1-right img{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
+}
+/* 以上記事1のcss */
+/* 以下記事２のcss */
+.article2{
+  width: 100%;
+  height: 334px;
+  background-color: #dd001f;
+  margin-bottom: 10px;
+}
+.article2-left{
+
+  width: 65%;
+  overflow: hidden;
+  position: relative;
+}
+.article2-left img{
+  height: 334px;
+  width: 100%;
+  object-fit: cover;
+}
+.article2-left img:hover{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
+}
+
+.text-white{
+  color: #fff;
+}
+.article2-title{
+  display: block;
+  border-bottom: solid 4px #fff;
+  width: 310px;
+  margin-bottom: 40px;
+}
+.article2-text1{
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+.article2-text-area{
+  position: absolute;
+  padding: 28px 30px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* 以上記事2のcss */
+/* 以下記事3のcss */
+.article3-right{
+  display: block;
+  width: 30%;
+  border-left: solid 10px #000;
+  padding: 28px 0 28px 30px;
+}
+.article3-title{
+  display: block;
+  color: #000;
+  border-bottom: solid 4px #000;
+  width: 260px;
+}
+.job-list li{
+  list-style: none;
+  padding: 20px 0;
+}
+.job-list li a{
+  color: #000;
+  text-decoration: none;
+}
+.joblist-text{
+  display: block;
+  width: 200px;
+}
+.joblist-text .fa-arrow-right{
+
+}
+
+/* 以上記事3のcss */
+/* 以下記事4のcss */
+.article4{
+  width: 100%;
+  height: 434px;
+  background-color: #222;
+  margin-bottom: 10px;
+}
+.article4-contentarea{
+  padding: 28px 32px 48px;
+}
+.article4-title{
+  display: block;
+  color: #fff;
+  border-bottom: solid 4px #fff;
+  width: 380px;
+}
+.position-rel{
+  position: relative;
+}
+.position-abs{
+  position: absolute;
+}
+.index-page-link{
+  position: absolute;
+  top: 40px;
+  right: 28px;
+}
+.link-text{
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.page-link-area{
+  margin-top: 40px;
+  justify-content: center;
+}
+.page-link-area div{
+  margin: 0 20px;
+}
+.inside-toyota a img{
+  width: 268px;
+  height: 268px;
+  object-fit: cover;
+}
+.news-room a img{
+  width: 268px;
+  height: 268px;
+  object-fit: cover;
+}
+.toyotaimes a img{
+  width: 268px;
+  height: 268px;
+
+}
+.content-1{
+  top: 50%;
+  width: 268px;
+  height: 268px;
+  color: #fff;
+}
+.content-1 h2{
+  text-align: center;
+}
+.content-1 p{
+  overflow-wrap: normal;
+  font-size: 0.9rem;
+  padding: 0 5px;
+}
+.content-2{
+  top: 50%;
+  width: 268px;
+  height: 268px;
+  color: #fff;
+}
+.content-2 h2{
+  text-align: center;
+}
+.content-2 p{
+  overflow-wrap: normal;
+  font-size: 0.9rem;
+  padding: 0 5px;
+}
+.content-3{
+  top: 25%;
+  color: #fff;
+}
+.content-3 h3{
+  font-size: 3.4rem;
+  transform: translateY(-75%);
+}
+.toyotimes-logo{
+  width: 152px;
+}

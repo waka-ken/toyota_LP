@@ -320,22 +320,40 @@ body{
   justify-content: center;
 }
 .page-link-area div{
-  margin: 0 20px;
+  margin-right: 40px;
 }
 .inside-toyota a img{
   width: 268px;
   height: 268px;
-  object-fit: cover;
+}
+.inside-toyota {
+  overflow: hidden;
+}
+.inside-toyota a img:hover{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
 }
 .news-room a img{
   width: 268px;
   height: 268px;
-  object-fit: cover;
+}
+.news-room {
+  overflow: hidden;
+}
+.news-room a img:hover{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
 }
 .toyotaimes a img{
   width: 268px;
   height: 268px;
-
+}
+.toyotaimes {
+  overflow: hidden;
+}
+.toyotaimes a img:hover{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
 }
 .content-1{
   top: 50%;
